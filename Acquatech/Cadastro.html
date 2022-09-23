@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN - Aquatec</title>
+    <title>CADASTRO - Aquatec</title>
     <link rel="stylesheet" href="Estilos.css">
-    <link rel="stylesheet" href="formulario_estilo.css">
+    <link rel="stylesheet" href="cadastro_estilo.css">
 
 </head>
 
@@ -19,17 +19,20 @@
                     <li><a href="Index.html">Home</a></li> <!-- Linkando páginas usando <a> ancor -->
                     <li>Simulador</li>
                     <li>|</li>
-                    <li id="aqui">Login</li>
-                    <li><a href="Cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li id="aqui">Cadastro</li>
                 </ul>
             </div>
         </div>
         <div>
             <div class="banner">
                 <div class="container">
-                    <div class="caixa_formulario">
-                        <h1>Olá de volta!</h1>
-                        <div class="formulario">
+                    <div class="caixa_cadastro">
+                        <h1>Bem-vindo!</h1>
+                        <div class="cadastro">
+
+                            <span>Nome:</span>
+                            <input id='nome_input'type="text" placeholder="Seu nome">
 
                             <span>E-mail:</span>
                             <input id='email_input'type="email" placeholder="Seu E-mail">
@@ -37,7 +40,10 @@
                             <span>Senha:</span>
                             <input id='senha_input'type="password" placeholder="*****">
 
-                            <button>Entrar</button>
+                            <span>Confirmação da senha:</span>
+                            <input id='senha2_input'type="password" placeholder="*****">
+
+                            <button>Cadastrar</button>
                         </div>
                     </div>
                 </div>
